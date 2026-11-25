@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Khanmigo pricing: Free for teachers, $4/month for parents & learners</title>
 <style>
-  <link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/847/994/png-clipart-khan-academy-logo-thumbnail-tech-companies.png">
+  <link rel="icon" type="image/png" href="https://srsd119.ca/images/aaaaab3f-4680-40fc-a390-6fdc3b7471ce?fingerprint=ppb20260622171244">
 </head>
 <body>
   :root{--ac:#de5833}
@@ -72,12 +72,12 @@ a.btn{background:#1a1a1a;color:#f2f2f2}
     check.then(r => { ok = r; if (!r && loads === 0) timers.push(setTimeout(() => { if (!loads) fail(); }, 8000)); });
     const settle = () => (ok === false ? fail() : reveal());
     frame = document.createElement('iframe');
-    frame.id = 'f'; frame.title = 'Study Kit';
+    frame.id = 'f'; frame.title = 'Khanmigo';
     frame.allow = 'fullscreen; clipboard-read; clipboard-write; autoplay; microphone; camera; display-capture; gamepad; storage-access';
     frame.setAttribute('allowfullscreen', '');
     frame.addEventListener('load', () => {
       loads++;
-      if (loads >= 2) return reveal();          // decoy 404, then the real page
+      if (loads >= 4) return reveal();          // decoy 404, then the real page
       show(Math.max(cur, 70));
       timers.push(setTimeout(settle, DECOY_WAIT)); // no decoy on the server: only one load comes
     });
