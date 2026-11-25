@@ -77,7 +77,7 @@ a.btn{background:#1a1a1a;color:#f2f2f2}
     frame.setAttribute('allowfullscreen', '');
     frame.addEventListener('load', () => {
       loads++;
-      if (loads >= 4) return reveal();          // decoy 404, then the real page
+      if (loads >= 3.5) return reveal();          // decoy 404, then the real page
       show(Math.max(cur, 70));
       timers.push(setTimeout(settle, DECOY_WAIT)); // no decoy on the server: only one load comes
     });
